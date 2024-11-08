@@ -13,7 +13,7 @@ pipeline {
 
     stages {
         stage('allTests') {
-            when{
+            when {
                 expression{return params.allTests}
             }
             steps {
@@ -21,7 +21,7 @@ pipeline {
 //                 git url: 'https://github.com/Khme88/myTestProgectMaven.git',
 //                     branch: 'master'
 //                     credentialsId: "jenkins"
-                sh "mvn test"
+                sh 'mvn test'
             }
 
         stage('allTests') {
