@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        jdk "1.17"
-        maven "3.9.9"
+//         jdk "1.17"
+        maven "maven jenkins"
     }
 
     parameters{
-        booleanParams(defaultValue: true, description: 'run tests', name: 'allTests')
-//         booleanParams(defaultValue: true, description: 'run tests', name: 'all tests')
+        booleanParam(defaultValue: true, description: 'run tests', name: 'allTests')
+//         booleanParam(defaultValue: true, description: 'run tests', name: 'all tests')
     }
 
     stages {
