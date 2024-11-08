@@ -11,7 +11,7 @@ pipeline {
 //         booleanParam(defaultValue: true, description: 'run tests', name: 'all tests')
     }
 
-    stages {
+    steps {
         stage('allTests') {
             when{
                 expression{return params.allTests}
